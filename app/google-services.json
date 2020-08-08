@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "202932518506",
+    "firebase_url": "https://techgroom-c7de4.firebaseio.com",
+    "project_id": "techgroom-c7de4",
+    "storage_bucket": "techgroom-c7de4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202932518506:android:a237b8ee2bfc743f27d413",
+        "android_client_info": {
+          "package_name": "com.example.passion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202932518506-quhp0ndqk4dehiao5cdp1mmhmc8eqodr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.passion",
+            "certificate_hash": "9d8d8a69126136a45c9ab31bfd47c707b44cc3c6"
+          }
+        },
+        {
+          "client_id": "202932518506-v1uqf9755p52c49sbg67nfp7s22paam3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvdYr6J4OHMPUjbxxu2pe88G3Je8kPW2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202932518506-v1uqf9755p52c49sbg67nfp7s22paam3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

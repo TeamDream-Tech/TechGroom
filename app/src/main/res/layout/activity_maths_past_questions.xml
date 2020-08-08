@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MathsPastQuestions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/getter"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:padding="8dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/maths"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_library_books"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question 1 out of 50"
+                android:textSize="17dp"
+                android:id="@+id/number"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/grey"
+            android:layout_below="@id/getter"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@id/getter"
+        android:layout_above="@id/setter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <io.github.kexanie.library.MathView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:text=""
+                                android:textAlignment="textStart"
+                                app:engine="MathJax"
+                                android:id="@+id/question"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textColor="@color/black"
+                                android:padding="10dp"
+                                android:textStyle="bold"
+                                android:layout_margin="15dp"
+                                >
+                            </io.github.kexanie.library.MathView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/grey"/>
+
+                            <io.github.kexanie.library.MathView
+                                android:id="@+id/option1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:padding="15dp"
+                                android:textAlignment="textStart"
+                                app:engine="MathJax"
+                                app:setTextSize="5dp"
+                                android:text="(a) Option 1" />
+
+
+                            <io.github.kexanie.library.MathView
+                                android:id="@+id/option2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:padding="15dp"
+                                android:textAlignment="textStart"
+                                app:engine="MathJax"
+                                android:text="(b) Option 2" />
+
+                            <io.github.kexanie.library.MathView
+                                android:id="@+id/option3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:padding="15dp"
+                                android:textAlignment="textStart"
+                                app:engine="MathJax"
+                                android:text="(c) Option 3" />
+
+
+                            <io.github.kexanie.library.MathView
+                                android:id="@+id/option4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:padding="15dp"
+                                app:engine="MathJax"
+                                android:textAlignment="textStart"
+                                android:text="(d) Option 4" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/grey" />
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <com.github.florent37.expansionpanel.ExpansionHeader
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:expansion_headerIndicator="@id/headerIndicator4"
+                                app:expansion_layout="@id/expansionLayout4"
+                                app:expansion_toggleOnClick="true">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="Show Answer"
+                                    android:textColor="@color/green"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/headerIndicator4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|right"
+                                    android:layout_marginLeft="16dp"
+                                    android:adjustViewBounds="true"
+                                    android:padding="5dp"
+                                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+                            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                            <com.github.florent37.expansionpanel.ExpansionLayout
+                                android:id="@+id/expansionLayout4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/follow_button_light_pressed_color">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <io.github.kexanie.library.MathView
+                                        android:id="@+id/answers"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:textAlignment="textStart"
+                                        android:layout_margin="5dp"
+                                        app:engine="MathJax"
+                                        android:text="hello world" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_above="@id/submitbtn"
+                                        android:layout_gravity="right"
+                                        android:src="@drawable/ic_description"
+                                        android:gravity="right"
+                                        android:id="@+id/explanation"
+                                        android:padding="5dp" />
+
+                                </LinearLayout>
+
+
+                            </com.github.florent37.expansionpanel.ExpansionLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/grey"
+        android:layout_above="@id/setter"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/setter"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/prevbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="PREV QUESTION"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_left"
+            android:background="@drawable/followbutton"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/submitbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="NEXT QUESTION"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right"
+            android:background="@drawable/followbutton"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

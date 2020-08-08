@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_Search"
+        android:orderInCategory="1"
+        android:title="SearchPost"
+        android:icon="@drawable/ic_search_white"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action"
+        android:orderInCategory="2"
+        android:title="Notifications"
+        android:icon="@drawable/ic_notifications"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="3"
+        android:title="About"
+        app:showAsAction="always"
+        app:actionLayout="@layout/view_alertsbadge"/>
+</menu>

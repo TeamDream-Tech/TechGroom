@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:id="@+id/tops"
+        android:layout_margin="1px">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_thumb_up"
+                android:id="@+id/quesdetaillike"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/quesdetaillikes"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="+0"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_thumb_down"
+                android:id="@+id/quesdetaildislike"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/quesdetailtitle"
+                        android:text="Question would be here, any how it likes or not an how it likes or n "
+                        android:layout_marginRight="30dp"/>
+
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/quesdetailmorebtn"
+                        android:background="@null"
+                        android:src="@drawable/ic_more_vert_black_24dp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tags"
+                        android:text="coderelateddvd"
+                        android:textSize="13dp"
+                        android:padding="10dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/trend"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorPrimary"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tags2"
+                        android:text="anotherone"
+                        android:padding="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="13dp"
+                        android:background="@drawable/trend"
+                        android:layout_margin="3dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorPrimary"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This is the layout for the description of the post we are going to create and it would be shown in this activity or what ever you guys may call it, im just tryihng to occupy space enough"
+                    android:id="@+id/quesdetaildescrip"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_date_range_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 3 days"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/quesdetailtime"
+                    android:padding="3dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_views"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:id="@+id/quesdetailviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text=" 621"
+                    android:textSize="12dp" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="James francis"
+                        android:textSize="13dp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/quesdetailname"
+                        android:textAlignment="viewEnd"
+                        android:layout_toLeftOf="@id/quesdetailpic"
+                        android:layout_alignBottom="@id/quesdetailpic"
+                        android:layout_marginBottom="7dp">
+
+                    </TextView>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/profpic"
+                        android:id="@+id/quesdetailpic"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/follow_button_light_pressed_color"
+        android:layout_below="@id/tops"
+        android:layout_above="@id/quescommentLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="87 ANSWERS"
+            android:textSize="13dp"
+            android:id="@+id/quesdetailcomment"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/quesdetailRecycler">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_margin="15dp"
+        android:id="@+id/quespostanswer">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    <RelativeLayout
+        android:id="@+id/quescommentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_face_black_24dp"
+            android:id="@+id/quesdetailprofile"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_width="1sp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/quesdetailprofile"
+            android:background="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/quesanswer"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_toEndOf="@id/quesdetailprofile"
+            android:layout_toStartOf="@id/quesdetailsendBtn"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:hint="Answer Question..."
+            android:inputType="textMultiLine"
+            android:layout_margin="1dp"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:id="@+id/quesdetailsendBtn"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_send_comment"
+            android:layout_centerVertical="true"
+            android:background="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

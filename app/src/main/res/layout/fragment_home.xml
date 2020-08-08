@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/follow_button_light_pressed_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="0px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/follow_button_light_pressed_color"
+            android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/section1"
+                    app:cardCornerRadius="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Courses"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/topic"
+                        android:padding="10dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MANAGE"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/viewmore1"
+                        android:layout_marginRight="0dp"
+                        android:padding="10dp"
+                        android:textStyle="bold"/>
+
+                        <io.supercharge.shimmerlayout.ShimmerLayout
+                            android:id="@+id/shimmer_text2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            app:shimmer_color="@color/gray"
+                            app:shimmer_animation_duration="1100">
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <HorizontalScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scrollbarSize="0px"
+                                    android:fadeScrollbars="true">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="30dp"
+                                        android:orientation="horizontal"
+                                        android:paddingTop="10dp"
+                                        android:paddingBottom="10dp">
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:padding="10dp">
+
+                                            <de.hdodenhof.circleimageview.CircleImageView
+                                                android:layout_width="70dp"
+                                                android:layout_height="70dp"
+                                                android:src="@drawable/biology"
+                                                android:id="@+id/sec1cont1"/>
+                                            <TextView
+                                                android:layout_marginTop="5dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Biology"
+                                                android:textAlignment="center"
+                                                android:layout_gravity="center_horizontal"
+                                                android:textColor="@color/black"/>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:gravity="center_horizontal"
+                                        android:padding="10dp">
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@drawable/economics"
+                                            android:id="@+id/sec1cont2"/>
+
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Economics"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:gravity="center_horizontal"
+                                            android:padding="10dp">
+                                            <de.hdodenhof.circleimageview.CircleImageView
+                                                android:layout_width="70dp"
+                                                android:layout_height="70dp"
+                                                android:src="@drawable/crk"
+                                                android:id="@+id/sec1cont3"/>
+
+                                            <TextView
+                                                android:layout_marginTop="5dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="C. R. K"
+                                                android:layout_gravity="center_horizontal"
+                                                android:textColor="@color/black"/>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:gravity="center_horizontal"
+                                            android:padding="10dp">
+                                            <de.hdodenhof.circleimageview.CircleImageView
+                                                android:layout_width="70dp"
+                                                android:layout_height="70dp"
+                                                android:src="@drawable/physics"
+                                                android:id="@+id/sec1cont4"/>
+
+                                            <TextView
+                                                android:layout_marginTop="5dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Physics"
+                                                android:layout_gravity="center_horizontal"
+                                                android:textColor="@color/black"/>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:gravity="center_horizontal"
+                                            android:padding="10dp">
+                                            <de.hdodenhof.circleimageview.CircleImageView
+                                                android:layout_width="70dp"
+                                                android:layout_height="70dp"
+                                                android:src="@drawable/geography"
+                                                android:id="@+id/sec1cont5"/>
+
+                                            <TextView
+                                                android:layout_marginTop="5dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Geography"
+                                                android:layout_gravity="center_horizontal"
+                                                android:textColor="@color/black"/>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:gravity="center_horizontal"
+                                            android:padding="10dp">
+                                            <de.hdodenhof.circleimageview.CircleImageView
+                                                android:layout_width="70dp"
+                                                android:layout_height="70dp"
+                                                android:src="@drawable/maths"
+                                                android:id="@+id/sec1cont6"/>
+
+                                            <TextView
+                                                android:layout_marginTop="5dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Maths"
+                                                android:layout_gravity="center_horizontal"
+                                                android:textColor="@color/black"/>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:gravity="center_horizontal"
+                                            android:padding="10dp">
+
+                                            <de.hdodenhof.circleimageview.CircleImageView
+                                                android:layout_width="70dp"
+                                                android:layout_height="70dp"
+                                                android:src="@drawable/chemistry"
+                                                android:id="@+id/sec1cont7"/>
+
+                                            <TextView
+                                                android:layout_marginTop="5dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Chemistry"
+                                                android:layout_gravity="center_horizontal"
+                                                android:textColor="@color/black"/>
+                                        </LinearLayout>
+
+                    </LinearLayout>
+
+                        </HorizontalScrollView>
+                    </ScrollView>
+
+                        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/section2"
+                    android:layout_below="@id/section1"
+                    app:cardCornerRadius="2dp"
+                    android:elevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="JAMB"
+                                android:textColor="@color/black"
+                                android:id="@+id/topic2"
+                                android:textSize="16dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="15dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="VIEW MORE"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/viewmore2"
+                                android:textSize="12dp"
+                                android:layout_marginRight="0dp"
+                                android:padding="15dp"
+                                android:textStyle="bold"/>
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Study Past Questions"
+                            android:id="@+id/hint"
+                            android:paddingLeft="10dp"
+                            android:layout_below="@id/topic2"/>
+                        <io.supercharge.shimmerlayout.ShimmerLayout
+                            android:id="@+id/shimmer_text3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            app:shimmer_animation_duration="1200"
+                            app:shimmer_color="@color/gray">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbarSize="0px">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:src="@drawable/maths"
+                                        android:id="@+id/sec2cont1"/>
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Maths"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@color/black"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:src="@drawable/chemistry"
+                                        android:id="@+id/sec2cont2"/>
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chemistry"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@color/black"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:src="@drawable/english"
+                                        android:id="@+id/sec2cont3"/>
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="User of\nEnglish"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@color/black"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:src="@drawable/geography"
+                                        android:id="@+id/sec2cont4"/>
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Geography"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@color/black"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:src="@drawable/biology"
+                                        android:id="@+id/sec2cont5"/>
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Biology"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@color/black"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:src="@drawable/literature"
+                                        android:id="@+id/sec2cont6"/>
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Literature"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@color/black"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:src="@drawable/economics"
+                                        android:id="@+id/sec2cont7"/>
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Economics"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="@color/black"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            </HorizontalScrollView>
+                        </ScrollView>
+
+                        </io.supercharge.shimmerlayout.ShimmerLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/section5"
+                app:cardCornerRadius="2dp"
+                android:elevation="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SENIOR WAEC"
+                            android:textColor="@color/black"
+                            android:id="@+id/topic5"
+                            android:textSize="16dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VIEW MORE"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/viewmore5"
+                            android:textSize="12dp"
+                            android:layout_marginRight="0dp"
+                            android:padding="10dp"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Its never late to start"
+                        android:id="@+id/hint5"
+                        android:paddingLeft="10dp"
+                        android:layout_below="@id/topic2"/>
+                    <io.supercharge.shimmerlayout.ShimmerLayout
+                        android:id="@+id/shimmer_text5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:shimmer_animation_duration="1200"
+                        app:shimmer_color="@color/gray">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbarSize="0px">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@drawable/economics"
+                                            android:id="@+id/sec5cont1"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Economics"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@drawable/crk"
+                                            android:id="@+id/sec5cont2"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="CRK"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@drawable/technicald"
+                                            android:id="@+id/sec5cont3"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Technical\nDrawing"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@drawable/english"
+                                            android:id="@+id/sec5cont4"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="English\nLanguage"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec5cont5"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Computer\nScience"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec5cont6"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Home\nEconomics"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec5cont7"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Social Studies"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </HorizontalScrollView>
+                        </ScrollView>
+
+                    </io.supercharge.shimmerlayout.ShimmerLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/section3"
+                app:cardCornerRadius="2dp"
+                android:elevation="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JUNIOR WAEC"
+                            android:textColor="@color/black"
+                            android:id="@+id/topic3"
+                            android:textSize="16dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VIEW MORE"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/viewmore3"
+                            android:textSize="12dp"
+                            android:layout_marginRight="0dp"
+                            android:padding="10dp"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Its never late to start"
+                        android:id="@+id/hint3"
+                        android:paddingLeft="10dp"
+                        android:layout_below="@id/topic2"/>
+                    <io.supercharge.shimmerlayout.ShimmerLayout
+                        android:id="@+id/shimmer_text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:shimmer_animation_duration="1200"
+                        app:shimmer_color="@color/gray">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbarSize="0px">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec3cont1"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Further\nMaths"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec3cont2"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Computer\nScience"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec3cont3"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Civic\nEducation"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec3cont4"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Government"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec3cont5"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Commerce"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec3cont6"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Agric\nScience"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec3cont7"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Economics"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </HorizontalScrollView>
+                        </ScrollView>
+
+                    </io.supercharge.shimmerlayout.ShimmerLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/section4"
+                app:cardCornerRadius="2dp"
+                android:elevation="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COMMON ENTRANCE"
+                            android:textColor="@color/black"
+                            android:id="@+id/topic4"
+                            android:textSize="16dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VIEW MORE"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/viewmore4"
+                            android:textSize="12dp"
+                            android:layout_marginRight="0dp"
+                            android:padding="10dp"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Its never late to start"
+                        android:id="@+id/hint4"
+                        android:paddingLeft="10dp"
+                        android:layout_below="@id/topic2"/>
+                    <io.supercharge.shimmerlayout.ShimmerLayout
+                        android:id="@+id/shimmer_text4a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:shimmer_animation_duration="1200"
+                        app:shimmer_color="@color/gray">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbarSize="0px">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec4cont1"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Basic\nTechnology"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec4cont2"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="CRK"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec4cont3"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="PHE"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec4cont4"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="English\Language"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec4cont5"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Computer\nScience"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec4cont6"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Home\nEconomics"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="10dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:src="@mipmap/ic_launcher"
+                                            android:id="@+id/sec4cont7"/>
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Social Studies"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@color/black"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </HorizontalScrollView>
+                        </ScrollView>
+
+                    </io.supercharge.shimmerlayout.ShimmerLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:src="@drawable/roundbutton"/>
+    </LinearLayout>
+
+</RelativeLayout>

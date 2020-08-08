@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.passion.selectyeardialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="40dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/maths" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="20dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            tools:layout_editor_absoluteX="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="JAMB"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mathematics Past Questions"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerHorizontal="true">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Year"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+           <RadioGroup
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/yeargroup"
+               android:paddingLeft="10dp">
+
+               <RadioButton
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="2019"
+                   android:id="@+id/jambmathsyear2019"
+                   android:layout_margin="10dp"/>
+               <RadioButton
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="2018"
+                   android:id="@+id/jambmathsyear2018"
+                   android:layout_margin="10dp"/>
+               <RadioButton
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="2017"
+                   android:id="@+id/jambmathsyear2017"
+                   android:layout_margin="10dp"/>
+           </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textSize="16dp"
+                    android:id="@+id/cancledialog"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textSize="16dp"
+                    android:layout_weight="1"
+                    android:id="@+id/closedialog"
+                    android:background="@color/green"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

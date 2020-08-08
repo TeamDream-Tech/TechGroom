@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatbackground1"
+    tools:context=".ChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarchat"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/profileIv"
+            android:scaleType="centerCrop"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/black"
+            app:civ_circle_background_color="@color/colorPrimary"
+            android:src="@drawable/ic_face_white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/cnameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="loading..."
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone"
+                android:id="@+id/userStatusTv"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/chatLayout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="15dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+            android:minHeight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/replylayout"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/time"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/replylayoutmessage"
+                android:text="His Reply"/>
+
+            <ImageView
+                android:id="@+id/replylayoutclose"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/ic_cancel" />
+        </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/emogi"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/messageEt"
+                    android:layout_weight="1"
+                    android:maxLines="50"
+                    android:background="@null"
+                    android:maxHeight="200dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Type a message"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="10dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_attach"
+                    android:id="@+id/attach"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="6dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_send_white"
+        android:id="@+id/sendmessageBtn"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundbutton"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chat_recyclerView"
+            android:layout_below="@id/toolbarchat"
+            android:layout_above="@id/chatLayout"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusd"
+        android:layout_above="@id/chatLayout"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/statusimg"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/colorPrimary"
+            android:src="@drawable/profile"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_receiver"
+            android:layout_marginTop="5dp"
+            android:padding="8dp">
+            <com.eyalbira.loadingdots.LoadingDots
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                app:LoadingDots_auto_play="true"
+                app:LoadingDots_dots_color="@color/colorPrimary"
+                app:LoadingDots_dots_count="3"
+                app:LoadingDots_dots_size="10dp"
+                app:LoadingDots_dots_space="2dp"
+
+                app:LoadingDots_loop_duration="1000"
+                app:LoadingDots_loop_start_delay="600"
+
+                app:LoadingDots_jump_duration="200"
+                app:LoadingDots_jump_height="8.5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerInParent="true"
+        android:id="@+id/value"/>
+
+</RelativeLayout>

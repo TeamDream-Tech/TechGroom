@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userListActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/userslist_RecyclerView"/>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="2dp"
+        android:id="@+id/loadingshimmer"
+        app:cardBackgroundColor="@null"
+        app:contentPadding="3dp">
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="match_parent"
+            android:id="@+id/one"
+            android:layout_height="wrap_content"
+            app:shimmer_color="@color/gray"
+            app:shimmer_animation_duration="1200">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/three"
+                android:src="@color/grey"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/three"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/two"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/nametv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:text="Person"
+                    android:textSize="16dp"
+                    android:layout_margin="3dp"
+                    android:background="@color/grey"
+                    android:textColor="@color/grey"/>
+                <TextView
+                    android:id="@+id/emailtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:text="Person Email oshlgjl ljslgjljlj"
+                    android:background="@color/grey"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/grey"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@color/grey"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/grey"
+                android:id="@+id/follow"
+                android:text="Follow"/>
+        </RelativeLayout>
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

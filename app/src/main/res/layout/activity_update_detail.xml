@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateDetailActivity">
+
+    <me.didik.component.StickyNestedScrollView
+        android:layout_above="@+id/commentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/english"
+                    android:layout_margin="10dp"
+                    android:id="@+id/hotpicture"
+                    android:scaleType="fitXY"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_bt_login_facebook"
+                        android:padding="13dp"
+                        android:background="@color/facebook_button_color_pressed"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_add"
+                        android:padding="13dp"
+                        android:background="@color/highlight_text"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:padding="13dp"
+                        android:src="@drawable/ic_bt_login_google"
+                        android:background="@color/like_icon_activated"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="SCHOLARSHIP"
+                    android:textAllCaps="true"
+                    android:id="@+id/hotgerne"
+                    android:textColor="@color/white"
+                    android:layout_margin="1dp"
+                    android:padding="10dp"/>
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="38dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_description_white"
+                    android:background="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:text="fg decides to postpone resumption of schools in nigeria 2020"
+                    android:textStyle="bold"
+                    android:id="@+id/hotheader"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:textSize="24dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_date_range_black_24dp"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/hottime"
+                            android:textColor="@color/gray"
+                            android:text="July - 07 2020"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/hotdate"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_views" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/gray"
+                            android:id="@+id/hotviews"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_comment_black" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/gray"
+                            android:id="@+id/hotcomments"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:textSize="16dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/hotcontent"
+                        android:text="The Independent National Electoral Commision (INEC) has started collating the results of the 2019 Bayelsa Governorship election which took place on Saturday November 16, 2019. \n\nThe Returning Officer, Professor Faraday Orunmuwese , has been receiving results from collation officers from the eight local Government Areas in the Starte.\n\nSee Photos below."/>
+                </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="INTAKES"
+                        android:textSize="17dp"
+                        android:padding="8dp"
+                        android:textAllCaps="true"
+                        android:tag="sticky"
+                        android:shadowColor="@color/black"
+                        android:shadowDy="5"
+                        android:background="@color/follow_button_light_pressed_color"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hotdetailRecycler">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+    </LinearLayout>
+
+    </me.didik.component.StickyNestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:id="@+id/hotshowlayout"/>
+
+    <RelativeLayout
+        android:id="@+id/hotcommentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_face_black_24dp"
+            android:id="@+id/hotdetailprofile"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_width="1sp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/hotdetailprofile"
+            android:background="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/hotintake"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_toEndOf="@id/hotdetailprofile"
+            android:layout_toStartOf="@id/hotdetailsendBtn"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:hint="Whats your take..."
+            android:inputType="textMultiLine"
+            android:layout_margin="1dp"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:id="@+id/hotdetailsendBtn"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_send_comment"
+            android:layout_centerVertical="true"
+            android:background="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

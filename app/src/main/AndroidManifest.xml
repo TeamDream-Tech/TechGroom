@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.passion">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UpdateDetailActivity"
+            android:label="Updates"
+            android:theme="@style/OurOWn"></activity>
+        <activity
+            android:name=".AdminActivity"
+            android:label="Techgroom Administrator"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".ChooseOpponent"
+            android:label="Choose Opponent"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".QuestionDetail"
+            android:label="Discussions"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".CreateQuestion"
+            android:label="New Question"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".CommonEntranceActivity"
+            android:label="Overview | Common Entrance"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".SeniorWaecActivity"
+            android:label="Overview | Senior Waec"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".JuniorWaecActivity"
+            android:label="Overview | Junior Waec"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".MathsYearChooser"
+            android:label="Set Your Preference"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".MathsPastQuestions"
+            android:label="Jamb - Mathematics - 2018"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".JambActivity"
+            android:label="Overview | Jamb"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".BottomActivity"
+            android:label="@string/title_activity_bottom"
+            android:theme="@style/AppThemenew" />
+        <activity
+            android:name=".wallPaper"
+            android:label="Wallpaper"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".userListActivity"
+            android:label="Users"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".ChatActivity"
+            android:theme="@style/AppThemenew" />
+        <activity
+            android:name=".PostDetailActivity"
+            android:label="Post Detail"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".Createpost"
+            android:label="New Post"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".Change_password"
+            android:label="Change Password"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".Edit_Profile_Activity"
+            android:label="Edit Profile"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Profile"
+            android:theme="@style/AppThemenew" />
+        <activity
+            android:name=".Notifications"
+            android:label="@string/title_activity_notifications"
+            android:theme="@style/AppThemenew" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".ActivityMain"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".SecondActivity"
+            android:theme="@style/OurOWn" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- define file provider -->
+        <!-- set the android:exported attribute to false -->
+        <!-- the FileProvider does not need to be public -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.passion.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+    </application>
+
+</manifest>
