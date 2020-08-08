@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,7 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 
 public class AdminActivity extends AppCompatActivity {
-    Button button;
+    Button button, ques;
     EditText title, detail, imgurl, addimgurl, source, gerne;
 
     FirebaseAuth mAuth;
@@ -47,6 +48,7 @@ public class AdminActivity extends AppCompatActivity {
         source = findViewById(R.id.sourcelink);
         gerne = findViewById(R.id.gerne);
 
+        ques = findViewById(R.id.uploadques);
         pd = new ProgressDialog(this);
         button = findViewById(R.id.uploadnews);
         button.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +62,13 @@ public class AdminActivity extends AppCompatActivity {
                 String gernes = gerne.getText().toString().trim();
 
                 uploadnews(newstitle, describe, url, newurl, sourcelink, gernes);
+            }
+        });
+        ques.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminActivity.this, UploadQuestion.class);
+                startActivity(intent);
             }
         });
 

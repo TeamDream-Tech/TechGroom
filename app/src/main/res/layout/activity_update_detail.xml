@@ -185,14 +185,14 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="INTAKES"
+                        android:text="COMMENTS"
                         android:textSize="17dp"
                         android:padding="8dp"
                         android:textAllCaps="true"
                         android:tag="sticky"
                         android:shadowColor="@color/black"
                         android:shadowDy="5"
-                        android:background="@color/follow_button_light_pressed_color"
+                        android:background="@color/grey"
                         android:textColor="@color/black"
                         android:textStyle="bold"/>
 

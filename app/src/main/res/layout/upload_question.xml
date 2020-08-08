@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E1E1"
+    tools:context=".UploadQuestion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/topText"
+                android:padding="5dp"
+                app:cardCornerRadius="10dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:id="@+id/Auto_add"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_auto_add"
+                        android:layout_marginLeft="10dp"
+                        ></ImageView>
+                    <Button
+                        android:layout_width="30dp"
+                        android:id="@+id/clear_question"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/ic_clear_all_question"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        ></Button>
+
+
+                    <Button
+                        android:layout_toRightOf="@id/Question_number"
+                        android:layout_width="30dp"
+                        android:id="@+id/Minus"
+                        android:background="@drawable/ic_minus"
+                        android:layout_centerVertical="true"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+
+                        ></Button>
+                    <Button
+                        android:layout_toLeftOf="@id/Question_number"
+                        android:layout_width="30dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/Add"
+                        android:background="@drawable/ic_addition"
+                        android:layout_centerVertical="true"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        ></Button>
+
+
+                    <TextView
+                        android:id="@+id/Question_number"
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_centerHorizontal="true"
+                        android:text="Q1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/topText"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/typeDefault"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_default_off"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/yearDefault"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_default_off"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/subjectDefault"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_default_off"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+            </LinearLayout>
+            <Spinner
+                android:id="@+id/type"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_white"
+                android:textAlignment="center"
+                android:layout_width="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="30dp"
+                android:layout_below="@id/topText">
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/year"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_white"
+                android:layout_width="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="30dp"
+                android:layout_below="@id/type">
+
+            </Spinner>
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/subject"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_white"
+                android:textAlignment="center"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/year">
+
+            </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/title"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/subject"
+                android:hint="Past Question Type eg(Jamb, Weac)"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/groupTitleET"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_white"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="5dp"
+                    android:gravity="top"
+                    android:minHeight="90dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/optionsLinearLayout"
+                android:layout_below="@id/title"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:background="@drawable/button_white"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:id="@+id/optionA"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Option A"
+                        android:padding="5dp"
+                        android:gravity="top"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:background="@drawable/button_white"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:hint="Option B"
+                        android:id="@+id/optionsB"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:gravity="top"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:background="@drawable/button_white"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:hint="Opption C"
+                        android:id="@+id/optionsC"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:gravity="top"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="D"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:background="@drawable/button_white"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:hint="Option D"
+                        android:id="@+id/oprionsD"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:gravity="top"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/answer"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_white"
+                android:layout_width="200dp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_height="30dp"
+                android:layout_below="@id/optionsLinearLayout">
+
+            </Spinner>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/descrip"
+                android:layout_below="@id/answer"
+                android:hint="Group Description"
+                android:layout_marginTop="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/groupDecriptionET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_white"
+                    android:gravity="top"
+                    android:padding="5dp"
+                    android:minHeight="90dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/createGroupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:rippleColor="@android:color/black"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_cloud_upload_black" />
+
+</RelativeLayout>

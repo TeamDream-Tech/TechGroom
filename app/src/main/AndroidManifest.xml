@@ -16,9 +16,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UpdateDetailActivity"
-            android:label="Updates"
+        <activity android:name=".UploadQuestion"
+            android:label="Upload Question"
             android:theme="@style/OurOWn"></activity>
+        <activity
+            android:name=".UpdateDetailActivity"
+            android:label="Updates"
+            android:theme="@style/OurOWn" />
         <activity
             android:name=".AdminActivity"
             android:label="Techgroom Administrator"

@@ -14,4 +14,147 @@
         <item>empty</item>
         <item>nothing</item>
     </string-array>
+
+    <string-array name="ExamType">
+        <item>Select Exam Type</item>
+        <item>Common Entrance</item>
+        <item>Junior Waec</item>
+        <item>Senior Waec</item>
+        <item>Senior Waec</item>
+    </string-array>
+
+    <string-array name="subject">
+        <item>Select Subject</item>
+        <item>Arabic</item>
+        <item>Agricultural Science</item>
+        <item>Animal Husbandry</item>
+        <item>Applied Electricity</item>
+        <item>Auto Body Repair And Spray Painting</item>
+        <item>Auto Electrical Work</item>
+        <item>Auto Mechanical Work</item>
+        <item>Auto Mechanics</item>
+        <item>Auto Parts Merchandising</item>
+
+        <item>Basketry</item>
+        <item>Biology</item>
+        <item>BlockLaying,Bricklaying And Concreting </item>
+        <item>Book Keeping</item>
+        <item>Building Management</item>
+
+        <item>Capentry And Jionery</item>
+        <item>Catering Craft Practice</item>
+        <item>Ceramics</item>
+        <item>Chemistry</item>
+        <item>Christian Religious Knowledge</item>
+        <item>Clerical Office Duties</item>
+        <item>Clothing And Textile</item>
+        <item>Commerce</item>
+        <item>Computer Studies</item>
+        <item>Cosmetology</item>
+        <item>Crop Husbandry And Horticulture</item>
+
+        <item>Data Processing</item>
+        <item>Dyeing And Bleaching</item>
+        <item>Economics</item>
+        <item>Edo</item>
+        <item>Efik</item>
+        <item>Electrical Installation And Maintenance Work</item>
+        <item>Electronics</item>
+        <item>English Language</item>
+        <item>Financial Accounting</item>
+        <item>Financial Account</item>
+        <item>Fisheries</item>
+        <item>Foods And Nutrition</item>
+        <item>Forestry</item>
+        <item>French</item>
+        <item>Furniture Making</item>
+        <item>Further Mathematics</item>
+
+        <item>Garment Making</item>
+        <item>General Agriculture</item>
+        <item>General Agriculture</item>
+        <item>General Knowledge In Art</item>
+        <item>General Mathematics</item>
+        <item>Geography</item>
+        <item>Ghanaian Languages</item>
+        <item>Government</item>
+        <item>Graphics Design</item>
+        <item>Gsm Phones Maintenance And Repair</item>
+
+        <item>Hausa</item>
+        <item>Health Education</item>
+        <item>History</item>
+        <item>Home Management</item>
+
+        <item>Ibibio</item>
+        <item>Igbo</item>
+        <item>Information And Communication Technology</item>
+        <item>Insurance</item>
+        <item>Integrated Science</item>
+        <item>Islamic Religious Studies</item>
+
+        <item>Jewellery</item>
+
+        <item>Leather Goods</item>
+        <item>LeatherWork</item>
+        <item>Literature</item>
+
+        <item>Machine WoodWorking</item>
+        <item>Marketing</item>
+        <item>Metalwork</item>
+        <item>Mining</item>
+        <item>Music</item>
+
+        <item>Office Practice</item>
+
+        <item>Painting And Decoration</item>
+        <item>Photography</item>
+        <item>Physics</item>
+        <item>Picture Making</item>
+        <item>Plumbing And Pipe Fitting</item>
+        <item>Principles Of Cost Accounting </item>
+        <item>Printing Craft Practice</item>
+
+        <item>Radio,Television And Electronics Works</item>
+        <item>Refrigeration And Air Conditioning</item>
+
+        <item>Salesmanship</item>
+        <item>Sculpture</item>
+        <item>Shorthand</item>
+        <item>Social Studies</item>
+        <item>Store Keeping</item>
+        <item>Store Management</item>
+
+        <item>Technical Drawing</item>
+        <item>Textile</item>
+        <item>Tourism</item>
+        <item>Typewriting</item>
+
+        <item>Upholstery</item>
+
+        <item>Visual Art</item>
+
+        <item>Welding And Fabrication Engineering Practice</item>
+        <item>West African Traditional Religious</item>
+        <item>Woodwork</item>
+        <item>Woodwork(GH)</item>
+        <item>Woodwork To I.E.D</item>
+
+        <item>Yoruba</item>
+
+    </string-array>
+    <string-array name="year">
+        <item>Select Year</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+    </string-array>
+    <string-array name="Answer">
+        <item>Select Answer</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
 </resources>

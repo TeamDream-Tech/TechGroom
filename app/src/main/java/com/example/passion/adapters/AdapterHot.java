@@ -122,28 +122,28 @@ public class AdapterHot extends RecyclerView.Adapter<AdapterHot.MyHolder>{
                 mProcessviews = true;
                 //get id of the post clicked
 
-//                final int pViews = Integer.parseInt(hotList.get(i).getViews());
-//
-//                //get id of the post clicked
-//                final String postIde = hotList.get(i).getpId();
-//                likesRef.addValueEventListener(new ValueEventListener() {
-//                    @Override
-//                    public void onDataChange(DataSnapshot dataSnapshot) {
-//                        if (mProcessviews){
-//                            if (!dataSnapshot.child(postIde).hasChild(myUid)){
-//                                // not liked, like it
-//                                postRef.child(postIde).child("views").setValue(""+(pViews+1));
-//                                likesRef.child(postIde).child(myUid).setValue("viewed"); // set any value
-//                                mProcessviews = false;
-//                            }
-//                        }
-//                    }
-//
-//                    @Override
-//                    public void onCancelled(DatabaseError databaseError) {
-//
-//                    }
-//                });
+                final int pViews = Integer.parseInt(hotList.get(i).getViews());
+
+                //get id of the post clicked
+                final String postIde = hotList.get(i).getpId();
+                likesRef.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        if (mProcessviews){
+                            if (!dataSnapshot.child(postIde).hasChild(myUid)){
+                                // not liked, like it
+                                postRef.child(postIde).child("views").setValue(""+(pViews+1));
+                                likesRef.child(postIde).child(myUid).setValue("viewed"); // set any value
+                                mProcessviews = false;
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
             }
         });
 

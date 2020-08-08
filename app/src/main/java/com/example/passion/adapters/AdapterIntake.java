@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.net.Uri;
 import android.text.format.DateFormat;
+import android.text.format.DateUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -83,12 +84,35 @@ public class AdapterIntake extends RecyclerView.Adapter<AdapterIntake.MyHolder> 
         Calendar calendar = Calendar.getInstance(Locale.getDefault());
         calendar.setTimeInMillis(Long.parseLong(timestamp));
         final String pTime = DateFormat.format("dd/MM/yyyy hh:mm aa", calendar).toString();
+        CharSequence realtime = DateUtils.getRelativeTimeSpanString(Long.parseLong(timestamp),System.currentTimeMillis(),DateUtils.SECOND_IN_MILLIS);
+
+
+        DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference().child("Users");
+        databaseReference.child(uid).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String name = String.valueOf(dataSnapshot.child("name").getValue());
+                String image = String.valueOf(dataSnapshot.child("image").getValue());
+
+                holder.nameTv.setText(name);
+                try {
+                    Picasso.get().load(image).placeholder(R.drawable.ic_face_black_24dp).into(holder.avatarIv);
+                }catch (Exception e){
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
 
         // set the data
-        holder.nameTv.setText(name);
+
         holder.commentTv.setText(comment);
-        holder.timeTv.setText(pTime);
+        holder.timeTv.setText(realtime);
 
         // set user dp
 
@@ -97,12 +121,6 @@ public class AdapterIntake extends RecyclerView.Adapter<AdapterIntake.MyHolder> 
         Uri mCurrentUser = FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl();
         String xxx = mCurrentUser.toString();
         if (mCurrentUser != null) {
-
-        }
-
-        try {
-            Picasso.get().load(image).placeholder(R.drawable.ic_face_black_24dp).into(holder.avatarIv);
-        }catch (Exception e){
 
         }
 
