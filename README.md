@@ -1,5 +1,5 @@
-# SocialGage
-  An Educative social media.
+# TechGrooom
+  An Educative social media which help educate student with nice content.
 
 ## Libraries
 *   [Gson](https://github.com/google/gson) : An Object-to-JSON serialization/deserialization library
@@ -16,8 +16,7 @@
 <br>
 <img src="images/tech_five.png" width="30%" vspace="10" hspace="10">
 <img src="images/tech_two.png" width="30%" vspace="10" hspace="10">
-<img src="images/tech_seven.png" width="30%" vspace="10" hspace="10">
+
   
-  ##Author
-  
-  Agalaba Ifeanyi Precious
+## Author
+Agalaba Ifeanyi Precious
